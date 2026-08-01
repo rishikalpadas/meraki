@@ -1349,6 +1349,54 @@ body.nav-open .hamburger span:nth-child(3) {
   border: 1px solid var(--line)
 }
 
+/* Stories section tabs */
+.pill-tabs {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pill-tab {
+  background: transparent;
+  border: 0;
+  color: var(--text-dim);
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 999px;
+  transition: .25s;
+}
+.pill-tab:hover {
+  color: #fff;
+}
+.pill-tab.active {
+  background: var(--red-grad);
+  color: #fff;
+}
+.pill-tabs .sep {
+  color: var(--line-soft);
+  font-size: 10px;
+  user-select: none;
+}
+
+/* Stories horizontal slider */
+.stories-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding-bottom: 20px;
+}
+.stories-scroll::-webkit-scrollbar {
+  display: none;
+}
+.stories-scroll > * {
+  scroll-snap-align: start;
+  flex: 0 0 calc((100% - 100px) / 6);
+}
+
 .work-card .body h3 {
   font-size: 17px
 }

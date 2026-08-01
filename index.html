@@ -233,27 +233,36 @@
     </div>
   </section>
 
-  <section class="section" style="padding-top:20px">
-    <div class="container reveal"
-      style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap">
-      <div>
+  <section class="section" data-slider style="padding-top:20px">
+    <div class="container reveal" style="display:flex; flex-direction:column; gap:24px;">
+      <div style="width: 100%;">
         <p class="eyebrow">Featured Work</p>
-        <h2 class="h-serif section-head" style="font-size:clamp(28px,3.2vw,40px)">Stories We&rsquo;re Proud Of</h2>
+        <h2 class="h-serif section-head" style="font-size:clamp(28px,3.2vw,40px); margin:0;">Stories We&rsquo;re Proud Of</h2>
       </div>
-      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap" data-filter-group="#homeWork">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="corporate">Corporate Events</button>
-        <button class="filter-btn" data-filter="exhibitions">Exhibitions</button>
-        <button class="filter-btn" data-filter="weddings">Weddings</button>
-        <button class="filter-btn" data-filter="brand">Brand Activations</button>
+      <div style="display:flex; width:100%; justify-content:flex-end; gap:32px; align-items:center; flex-wrap:wrap" data-filter-group="#homeWork">
+        <div class="pill-tabs">
+          <button class="filter-btn pill-tab active" data-filter="all">All</button>
+          <span class="sep">|</span>
+          <button class="filter-btn pill-tab" data-filter="corporate">Corporate Events</button>
+          <span class="sep">|</span>
+          <button class="filter-btn pill-tab" data-filter="exhibitions">Exhibitions</button>
+          <span class="sep">|</span>
+          <button class="filter-btn pill-tab" data-filter="weddings">Weddings</button>
+          <span class="sep">|</span>
+          <button class="filter-btn pill-tab" data-filter="brand">Brand Activations</button>
+        </div>
+        <div class="slider-nav">
+          <button aria-label="Previous" data-prev>&lt;</button>
+          <button aria-label="Next" data-next>&gt;</button>
+        </div>
       </div>
     </div>
     <div class="container" id="homeWork" style="margin-top:36px">
-      <div class="cards-grid cards-3 reveal">
+      <div class="stories-scroll h-scroll reveal">
         <article class="project-card work-card" data-cat="all exhibitions">
           <div class="thumb"><img src="assets/images/project-samsung.jpg" alt="Samsung" loading="lazy"></div>
           <div class="body">
-            <h3>Samsung</h3>
+            <h3 class="h-serif">Samsung</h3>
             <p>Trade Show Booth</p>
             <div class="cat">Exhibition Design</div>
           </div>
@@ -262,7 +271,7 @@
           <div class="thumb"><img src="assets/images/project-tata.jpg" alt="Tata Leadership Summit" loading="lazy">
           </div>
           <div class="body">
-            <h3>Tata Leadership Summit</h3>
+            <h3 class="h-serif">Tata Leadership Summit</h3>
             <p>Conference &amp; Gala Dinner</p>
             <div class="cat">Corporate Event</div>
           </div>
@@ -270,7 +279,7 @@
         <article class="project-card work-card" data-cat="all brand">
           <div class="thumb"><img src="assets/images/project-cocacola.jpg" alt="Coca-Cola Launch" loading="lazy"></div>
           <div class="body">
-            <h3>Coca-Cola Launch</h3>
+            <h3 class="h-serif">Coca-Cola Launch</h3>
             <p>Brand Activation</p>
             <div class="cat">Product Launch</div>
           </div>
@@ -279,7 +288,7 @@
           <div class="thumb"><img src="assets/images/project-adani-meet.jpg" alt="Adani Annual Meet" loading="lazy">
           </div>
           <div class="body">
-            <h3>Adani Annual Meet</h3>
+            <h3 class="h-serif">Adani Annual Meet</h3>
             <p>Gala Dinner</p>
             <div class="cat">Corporate Event</div>
           </div>
@@ -288,7 +297,7 @@
           <div class="thumb"><img src="assets/images/project-destination-wedding.jpg" alt="Destination Wedding"
               loading="lazy"></div>
           <div class="body">
-            <h3>Destination Wedding</h3>
+            <h3 class="h-serif">Destination Wedding</h3>
             <p>Udaipur</p>
             <div class="cat">Wedding Experience</div>
           </div>
@@ -297,15 +306,31 @@
           <div class="thumb"><img src="assets/images/project-exhibition.jpg" alt="Exhibition Stall Design"
               loading="lazy"></div>
           <div class="body">
-            <h3>Exhibition Stall Design</h3>
+            <h3 class="h-serif">Exhibition Stall Design</h3>
             <p>Concept to Execution</p>
             <div class="cat">Exhibition Design</div>
           </div>
         </article>
+        <article class="project-card work-card" data-cat="all brand">
+          <div class="thumb"><img src="assets/images/project-acer.jpg" alt="Acer Tech Reveal" loading="lazy"></div>
+          <div class="body">
+            <h3 class="h-serif">Acer Tech Reveal</h3>
+            <p>Product Showcase</p>
+            <div class="cat">Brand Activation</div>
+          </div>
+        </article>
+        <article class="project-card work-card" data-cat="all corporate">
+          <div class="thumb"><img src="assets/images/project-mahindra.jpg" alt="Mahindra Excellence Awards" loading="lazy"></div>
+          <div class="body">
+            <h3 class="h-serif">Mahindra Awards</h3>
+            <p>Gala Night</p>
+            <div class="cat">Corporate Event</div>
+          </div>
+        </article>
       </div>
-    </div>
-    <div class="container center" style="margin-top:40px">
-      <a href="portfolio.html" class="btn btn-line">View All Projects <span class="arr">&rarr;</span></a>
+      <div class="center" style="margin-top:40px">
+        <a href="portfolio.html" class="btn btn-line">VIEW ALL PROJECTS <span class="arr">&rarr;</span></a>
+      </div>
     </div>
   </section>
 
