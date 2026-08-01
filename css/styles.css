@@ -824,9 +824,9 @@ body.nav-open .hamburger span:nth-child(3) {
 
 /* Travelling glow orb — rides the curve from bottom to top */
 .curve-glow-traveler {
-  stroke-dasharray: 80 900;
+  stroke-dasharray: 80 1500;
   stroke-dashoffset: 0;
-  animation: glow-travel 2.4s ease-in-out 3.6s infinite;
+  animation: glow-travel 3.2s ease-in-out 3.6s infinite;
 }
 
 @keyframes curve-draw {
@@ -835,7 +835,7 @@ body.nav-open .hamburger span:nth-child(3) {
 
 @keyframes glow-travel {
   0%   { stroke-dashoffset: 0; }
-  100% { stroke-dashoffset: -980; }
+  100% { stroke-dashoffset: -1600; }
 }
 
 
